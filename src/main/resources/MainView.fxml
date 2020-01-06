@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="id" layoutX="65.0" layoutY="15.0" prefHeight="25.0" prefWidth="195.0" />
+      <Button fx:id="copy" layoutX="530.0" layoutY="361.0" mnemonicParsing="false" onAction="#onCopy" prefWidth="60.0" text="Copy" />
+      <Label layoutX="15.0" layoutY="15.0" prefHeight="25.0" prefWidth="50.0" text="ID:" textAlignment="RIGHT" />
+      <Label layoutX="270.0" layoutY="15.0" prefHeight="25.0" prefWidth="50.0" text="Material:" />
+      <ComboBox fx:id="material" editable="true" layoutX="325.0" layoutY="15.0" prefHeight="25.0" prefWidth="195.0" promptText="---" />
+      <Label layoutX="270.0" layoutY="45.0" prefHeight="25.0" prefWidth="50.0" text="Data:" />
+      <TextField fx:id="data" layoutX="325.0" layoutY="45.0" prefHeight="25.0" prefWidth="70.0" promptText="0" />
+      <Label layoutX="15.0" layoutY="45.0" prefHeight="25.0" prefWidth="50.0" text="Display:" />
+      <TextField fx:id="display" layoutX="65.0" layoutY="45.0" prefHeight="25.0" prefWidth="195.0" />
+      <Label layoutX="400.0" layoutY="45.0" prefHeight="25.0" prefWidth="50.0" text="Amount: " />
+      <TextField fx:id="amount" layoutX="450.0" layoutY="45.0" prefHeight="25.0" prefWidth="70.0" text="1" />
+      <TextArea fx:id="lore" layoutX="65.0" layoutY="75.0" prefHeight="50.0" prefWidth="195.0" />
+      <Label layoutX="15.0" layoutY="75.0" prefHeight="25.0" prefWidth="50.0" text="Lore:" />
+      <VBox alignment="TOP_CENTER" layoutX="530.0" layoutY="85.0" prefHeight="130.0" prefWidth="30.0">
+         <children>
+            <Label text="&amp;0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label text="&amp;1" textFill="#0000aa">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label text="&amp;2" textFill="#00aa00">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label text="&amp;3" textFill="#00aaaa">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label text="&amp;4" textFill="#aa0000">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label text="&amp;5" textFill="#aa00aa">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label text="&amp;6" textFill="#ffaa00">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label text="&amp;7" textFill="#aaaaaa">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="559.0" layoutY="85.0" prefHeight="130.0" prefWidth="30.0">
+         <children>
+            <Label text="&amp;8" textFill="#555555">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label text="&amp;9" textFill="#5555ff">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label text="&amp;a" textFill="#55ff55">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label text="&amp;b" textFill="#55ffff">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label text="&amp;c" textFill="#ff5555">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label text="&amp;d" textFill="#ff55ff">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label text="&amp;e" textFill="#ffff55">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label text="&amp;f" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="530.0" layoutY="215.0" prefHeight="81.0" prefWidth="60.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="15.0" prefWidth="59.0" text="&amp;k Magic">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="15.0" prefWidth="59.0" style="-fx-font-weight: bold;" text="&amp;l Bold">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="15.0" prefWidth="59.0" text="&amp;m Strike">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="15.0" prefWidth="59.0" text="&amp;n Under" underline="true">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="15.0" prefWidth="59.0" text="&amp;o Italic">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="15.0" prefWidth="59.0" text="&amp;r Reset">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="clear" layoutX="530.0" layoutY="15.0" mnemonicParsing="false" onAction="#onClear" prefWidth="60.0" text="Clear" />
+      <ColorPicker fx:id="optColV" editable="true" layoutX="125.0" layoutY="181.0" prefWidth="135.0" />
+      <Label layoutX="15.0" layoutY="130.0" prefHeight="25.0" prefWidth="50.0" text="Option:" />
+      <CheckBox fx:id="optUnb" layoutX="65.0" layoutY="134.0" mnemonicParsing="false" text="Unbreakable" />
+      <CheckBox fx:id="optShi" layoutX="65.0" layoutY="159.0" mnemonicParsing="false" onAction="#onShinyClick" text="Shiny" />
+      <CheckBox fx:id="optCol" layoutX="65.0" layoutY="185.0" mnemonicParsing="false" text="Color" />
+      <CheckBox fx:id="optHea" layoutX="65.0" layoutY="211.0" mnemonicParsing="false" text="Head" />
+      <TextField fx:id="optHeaV" layoutX="125.0" layoutY="207.0" onAction="#onHeadValueWrite" prefHeight="25.0" prefWidth="113.0" />
+      <Label layoutX="242.0" layoutY="212.0" onMouseClicked="#onURLClick" prefWidth="18.0" text="URL" textFill="#30a0c0" underline="true">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="75.0" prefHeight="25.0" prefWidth="50.0" text="Enchant:" />
+      <ComboBox fx:id="encList" editable="true" layoutX="325.0" layoutY="75.0" prefHeight="25.0" prefWidth="140.0" promptText="---" />
+      <TextField fx:id="encLv" layoutX="465.0" layoutY="75.0" prefHeight="25.0" prefWidth="30.0" />
+      <Button layoutX="495.0" layoutY="75.0" mnemonicParsing="false" onAction="#onEncAdd" prefHeight="25.0" prefWidth="25.0" text="+" />
+      <ListView fx:id="encView" editable="true" layoutX="325.0" layoutY="100.0" onKeyPressed="#onEncKey" prefHeight="50.0" prefWidth="195.0" />
+      <Label layoutX="15.0" layoutY="235.0" prefHeight="25.0" prefWidth="50.0" text="Hide:" />
+      <CheckBox fx:id="hideAtt" layoutX="65.0" layoutY="239.0" mnemonicParsing="false" text="ATTRIBUTES" />
+      <CheckBox fx:id="hideEnc" layoutX="65.0" layoutY="264.0" mnemonicParsing="false" text="ENCHANTS" />
+      <CheckBox fx:id="hideDes" layoutX="65.0" layoutY="289.0" mnemonicParsing="false" text="DESTROYS" />
+      <CheckBox fx:id="hidePla" layoutX="65.0" layoutY="314.0" mnemonicParsing="false" text="PLACED_ON" />
+      <CheckBox fx:id="hidePot" layoutX="65.0" layoutY="339.0" mnemonicParsing="false" text="POTION_EFFECTS" />
+      <CheckBox fx:id="hideUnb" layoutX="65.0" layoutY="364.0" mnemonicParsing="false" text="UNBREAKABLE" />
+      <Label layoutX="270.0" layoutY="153.0" prefHeight="25.0" prefWidth="50.0" text="Attribute:" />
+      <ComboBox fx:id="attSlot" editable="true" layoutX="325.0" layoutY="153.0" prefHeight="25.0" prefWidth="70.0" promptText="slot" />
+      <ComboBox fx:id="attList" editable="true" layoutX="395.0" layoutY="153.0" prefHeight="25.0" prefWidth="70.0" promptText="---" />
+      <TextField fx:id="attLv" layoutX="465.0" layoutY="153.0" prefHeight="25.0" prefWidth="30.0" />
+      <Button layoutX="495.0" layoutY="153.0" mnemonicParsing="false" onAction="#onAttAdd" prefHeight="25.0" prefWidth="25.0" text="+" />
+      <ListView fx:id="attView" editable="true" layoutX="325.0" layoutY="178.0" onKeyPressed="#onAttKey" prefHeight="50.0" prefWidth="195.0" />
+      <Label layoutX="270.0" layoutY="231.0" prefHeight="25.0" prefWidth="50.0" text="Potion:" />
+      <ComboBox fx:id="potList" editable="true" layoutX="325.0" layoutY="231.0" prefHeight="25.0" prefWidth="110.0" promptText="---" />
+      <TextField fx:id="potTime" layoutX="465.0" layoutY="231.0" prefHeight="25.0" prefWidth="30.0" promptText="lv" />
+      <Button layoutX="495.0" layoutY="231.0" mnemonicParsing="false" onAction="#onPotAdd" prefHeight="25.0" prefWidth="25.0" text="+" />
+      <ListView fx:id="potView" editable="true" layoutX="325.0" layoutY="256.0" onKeyPressed="#onPotKey" prefHeight="50.0" prefWidth="195.0" />
+      <TextArea fx:id="skill" layoutX="325.0" layoutY="309.0" prefHeight="77.0" prefWidth="195.0" />
+      <Label layoutX="270.0" layoutY="309.0" prefHeight="25.0" prefWidth="50.0" text="Skill:" />
+      <TextField fx:id="potLv" layoutX="435.0" layoutY="231.0" prefHeight="25.0" prefWidth="30.0" promptText="t" />
+      <Button layoutX="530.0" layoutY="335.0" mnemonicParsing="false" onAction="#onSave" prefWidth="60.0" text="Save" />
+      <Label layoutX="531.0" layoutY="65.0" style="-fx-font-weight: bold;" text="ColorCode" underline="true" />
+   </children>
+</Pane>
